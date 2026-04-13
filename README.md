@@ -1,6 +1,6 @@
 # viagememdia-api
 
-Base inicial de API **somente backend** com **NestJS + TypeScript**, incluindo autenticação simples por **Bearer Token** e endpoint de health check.
+Base inicial de API **somente backend** com **NestJS + JavaScript**, incluindo autenticação simples por **Bearer Token** e endpoint de health check.
 
 ## Requisitos
 
@@ -36,10 +36,9 @@ API_TOKEN=meu-token-super-seguro
 npm run start:dev
 ```
 
-### Produção (build + start)
+### Produção
 
 ```bash
-npm run build
 npm run start:prod
 ```
 
@@ -67,7 +66,7 @@ A API utiliza autenticação global por Bearer Token:
 - Se ausente/inválido: `401` com JSON `{ "message": "Unauthorized" }`
 
 > O endpoint `/health` está protegido por padrão.  
-> Se quiser torná-lo público depois, basta usar o decorator `@Public()` no método/controlador.
+> Se quiser torná-lo público depois, basta usar o helper `Public()` no método/controlador.
 
 ## Exemplo de teste com `curl`
 
