@@ -1,4 +1,4 @@
-export default () => ({
+module.exports = () => ({
   port: Number(process.env.PORT ?? 3000),
   apiToken: process.env.API_TOKEN ?? '',
   serviceName: 'viagememdia-api',
